@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.co.certificacion.wong.runners.RestApiRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="50HW014280" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/wong/rest_api.feature:8 ?[0m# Consume services
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
+0m2.039s
+
+net.serenitybdd.core.exceptions.SerenityManagedException: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:124)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:346)
+	at java.base/java.lang.Class.newInstance(Class.java:604)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.createMap(ScriptBytecodeAdapter.java:637)
+	at io.restassured.internal.ResponseParserRegistrar.<init>(ResponseParserRegistrar.groovy)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:346)
+	at net.serenitybdd.rest.SerenityRest.given(SerenityRest.java:214)
+	at net.serenitybdd.screenplay.rest.interactions.RestInteraction.rest(RestInteraction.java:32)
+	at net.serenitybdd.screenplay.rest.interactions.Post$$EnhancerByCGLIB$$6437c6d9.CGLIB$rest$1(<generated>)
+	at net.serenitybdd.screenplay.rest.interactions.Post$$EnhancerByCGLIB$$6437c6d9$$FastClassByCGLIB$$49fc3d71.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:10)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:373)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:158)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at net.serenitybdd.screenplay.rest.interactions.Post$$EnhancerByCGLIB$$6437c6d9.rest(<generated>)
+	at net.serenitybdd.screenplay.rest.interactions.Post.performAs(Post.java:24)
+	at net.serenitybdd.screenplay.rest.interactions.Post$$EnhancerByCGLIB$$6437c6d9.CGLIB$performAs$0(<generated>)
+	at net.serenitybdd.screenplay.rest.interactions.Post$$EnhancerByCGLIB$$6437c6d9$$FastClassByCGLIB$$49fc3d71.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:461)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:446)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:421)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:176)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:163)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:69)
+	at net.serenitybdd.screenplay.rest.interactions.Post$$EnhancerByCGLIB$$6437c6d9.performAs(<generated>)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.co.certificacion.wong.stepsdefinitions.RestApiStepsDefinition.hePutAnAlbumsApi(RestApiStepsDefinition.java:32)
+	at ?.He Put in /public-api/albums/(src/test/resources/features/wong/rest_api.feature:10)
+
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+</testsuite>
